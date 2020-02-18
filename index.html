@@ -11,7 +11,7 @@
     <h1>JavaScript Homework</h1>
 	<p>Add the JavaScript code needed to enable auto-complete on this form.  Whenever the checkbox is checked, the code should automatically copy the values from Shipping Name and Shipping Zip into the Billing Name and Billing Zip.  If the checkbox is unchecked, the Billing Name and Billing Zip should go blank.</p>
 
-<form>
+<form onsubmit="compareEntries()">
 		<fieldset>
 			<legend>Shipping Information</legend>
 			<label for ="shippingName">Name:</label>
