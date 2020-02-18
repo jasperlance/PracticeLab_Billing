@@ -3,10 +3,9 @@ function billingFunction() {
 
     if (document.getElementById('same').checked) {
 
-        var shippingName = document.getElementById('shippingName').value;
+        let shippingName = document.getElementById('shippingName').value;
 
-        var shippingZip = document.getElementById('shippingZip').value;
-
+        let shippingZip = document.getElementById('shippingZip').value;
 
 
         document.getElementById('billingName').value = shippingName;
@@ -24,5 +23,22 @@ function billingFunction() {
         document.getElementById('billingZip').value = "";
 
     }
+function compareEntries(){
 
+        var shippingName = document.getElementById('shippingName').value;
+
+        var shippingZip = document.getElementById('shippingZip').value;
+
+
+
+        document.getElementById('billingName').value = shippingName;
+
+        document.getElementById('billingZip').value = shippingZip;
+
+    if (billingName === shippingName && shippingZip === billingZip){
+        alert("entries ok");
+    }    else{
+        alert("sad")
+    }
+}
 }
