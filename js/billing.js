@@ -36,9 +36,9 @@ function compareEntries(){
         document.getElementById('billingZip').value = shippingZip;
 
     if (billingName === shippingName && shippingZip === billingZip){
-        alert("entries ok");
+        alert("entries were sent to server...");
     }    else{
-        alert("sad")
+        alert("error");
     }
 }
 }
